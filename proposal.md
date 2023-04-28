@@ -1,7 +1,4 @@
-## [Challenge 12](https://github.com/ECMWFCode4Earth/challenges_2023/issues/3) – Compression of Geospatial Data with Varying Information Density ([Link to G-Doc](https://docs.google.com/document/d/1FD5dQIBb9xBYCU9RIoggPZZV_C3qqEwmdCTHJbM3VZ4/edit?usp=sharing))
-
-[Code for Earth / Innovation - Collaboration](https://codeforearth.ecmwf.int/) 
-
+# Proposal
 
 ## 1. Background / Motivation
 
@@ -15,13 +12,11 @@ Although the xbitinfo package offers a promising open-source solution for lossy 
 
 I am excited to present this proposal, which aims to enhance xbitinfo's capabilities, optimize its compression performance, and ensure accurate and efficient handling of complex geospatial data. My motivation for this project stems from a deep interest in the intersection of Earth data science and software engineering, and a desire to apply my technical skills to solve real-world problems.
 
-
 ## 2. Challenge 
 
 Geospatial data exhibits significant variability in information density both spatially and temporally. This variability poses a challenge for existing compression techniques, as they struggle to preserve the rich information content in regions with high density while discarding random noise in areas with low density.
 
 xbitinfo's current framework, which relies on maximum information content for the entire dataset, leads to suboptimal compression performance. To overcome these limitations, the project will focus on refining xbitinfo's approach to leverage the inherent spatial and temporal variability of geospatial data. This will enable more efficient data storage and analysis.
-
 
 ## 3. The proposed solution
 
@@ -43,7 +38,6 @@ B. Seamless integration and compatibility: Ensure that the improved xbitinfo pac
 
 C. Evaluation and comparison with state-of-the-art techniques: Perform extensive benchmarking and validation of the updated xbitinfo package, comparing its performance against the original implementation and other state-of-the-art compression techniques. 
 
-
 ## 4. Key milestones and deliverables
 
 * Milestone 1: Research and development 
@@ -60,10 +54,7 @@ C. Evaluation and comparison with state-of-the-art techniques: Perform extensive
     * Deliverable 5.1: Comprehensive user documentation and API reference for the updated xbitinfo package, focusing on the new chunk-based processing and compression capabilities.
     * Deliverable 5.2: Presentation of project findings at ECMWF-Bologna and publication of results in a peer-reviewed journal or workshop at a top AI conference. 
 
-
 ## 5. Proposed Timeline
-
-[Link to G-Sheet](https://docs.google.com/spreadsheets/d/1yxded_C6VJ5N5cQETiBNVlD0Es4fBzNRK7gzDeuUMu4/edit?usp=sharing)
 
 |               | May           | June  | July  | August|
 | ------------- |:-------------:|:-----:|:-----:|:-----:|
@@ -78,47 +69,15 @@ C. Evaluation and comparison with state-of-the-art techniques: Perform extensive
 
 ## 6. Plan to share project outcomes 
 
-
-
 * Code will be shared via the open-source GitHub repository of [xbitinfo](https://github.com/observingClouds/xbitinfo)
 * Blog post
 * Collaboration with ECMWF mentors on a journal paper
 * A short version of the work can be presented at EGU next year and also submitted to a workshop at an AI conference such as the ClimateChangeAI workshops 
 
-References:
+### References:
 
-    Klöwer, M. 2021. “Low-Precision Climate Computing: Preserving Information despite Fewer Bits.” http://purl.org/dc/dcmitype/Text, University of Oxford. 
+Klöwer, M. 2021. “Low-Precision Climate Computing: Preserving Information despite Fewer Bits.” http://purl.org/dc/dcmitype/Text, University of Oxford. 
 
-    Klöwer, Milan, Miha Razinger, Juan J. Dominguez, Peter D. Düben, and Tim N. Palmer. 2021. “Compressing Atmospheric Data into Its Real Information Content.” _Nature Computational Science_ 1(11):713–24. doi: 10.1038/s43588-021-00156-2. 
+Klöwer, Milan, Miha Razinger, Juan J. Dominguez, Peter D. Düben, and Tim N. Palmer. 2021. “Compressing Atmospheric Data into Its Real Information Content.” _Nature Computational Science_ 1(11):713–24. doi: 10.1038/s43588-021-00156-2. 
     
-    Schulz, Hauke, Aaron Spring, and Milan Klöwer. 2022.“Xbitinfo: Compress Datasets Based on Their Information Content,” October 27. 
-
-
-## [Not submitted]
-### 7. Appendices 
-
-1. **[Thoughts on regionally varying keep bits](https://github.com/observingClouds/xbitinfo/discussions/160) [GitHub discussion]**
-   * How should regions be defined? As a list of slices? By creating sub-(data)sets?
-   * How should this be saved in a dataset?
-   * Are there cases when the compression would benefit from chunk dependent compressors? Should zarr support different compressors per chunk?
-   * How can we ensure that Dask workers can calculate the keepbits for each chunk in parallel? 
-   * Should the division be static or dynamic? 
-   * What criteria should be considered to define a chunk? 
-   * Parallel compression of different chunks? 
-   * Are “boring” regions the same for all events of interest? Any similarities? 
-
-Research:
-
-| Resource     | Description (❗: important)     | Status     |
-|---|---|---|
-| (Klöwer 2021)     | ❗Ph.D. thesis: "Low-precision climate computing: preserving information despite fewer bits"  (thank you Klöwer for the quality of this thesis)     |      |
-| ❗ Thoughts on regionally varying keep bits      | ❗     |      |
-| (Schulz, Spring, and Klöwer 2022)     | Presentation of xbitinfo     |      |
-| ELefridge     |      |      |
-| (Klöwer et al. 2021)     | ❗Paper: "Compressing atmospheric data into its real information content"     |      |
-| Getting Started with xarray      | xarray tutorial     |      |
-| xarray-contrib/xarray-tutorial      | xarray tutorial     |      |
-| Quickstart with xbitinfo     | xbitinfo tutorial     |      |
-| (PDF) NetCDF Compression Improvements      | NetCDF Compression Improvements     |      |
-| JPEG compression 	     | Block splitting (8x8) before DCT     |      |
-|      |      |      |
+Schulz, Hauke, Aaron Spring, and Milan Klöwer. 2022.“Xbitinfo: Compress Datasets Based on Their Information Content,” October 27. 
