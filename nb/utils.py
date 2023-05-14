@@ -44,7 +44,7 @@ def get_size(ext: str, suffix: 'str' = '') -> dict:
     Get size of files
     """
 
-    sizes = subprocess.check_output(f'du -s *.{ext}',
+    sizes = subprocess.check_output(f'du -s *{suffix}.{ext}',
                                     shell=True).decode("utf-8")
 
     sizes = sizes.replace('\t', ';').replace('\n', ';').split(';')
