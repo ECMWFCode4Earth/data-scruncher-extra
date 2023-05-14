@@ -9,4 +9,4 @@ The challenge of this project is to improve `xbitinfo` to preserve the natural v
 
 Currently in the bitinformation framework, to preserve all real information, the maximum information content calculated by `xbitinfo` needs to be used for the entire dataset. However, bitinformation can also be calculated on subsets, such that the ‘boring’ parts can therefore be more efficiently compressed.
 
-![earth compressed by a c-clamp in space](https://github.com/ayoubft/ECMWFCode4Earth-23-compression/assets/63267601/8a6e80fd-e847-4301-b48e-92886e94e318)
+![logo](assets/ecmwf-challenge.jpg)
