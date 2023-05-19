@@ -1,6 +1,6 @@
-# ECMWF Code4Earth 2023 challenge #12
+# ECMWF Code4Earth 2023 Challenge #12
 
-## [Challenge 12 -Compression of Geospatial Data with Varying Information Density](https://github.com/ECMWFCode4Earth/challenges_2023/issues/3)
+## [Challenge 12 - Compression of Geospatial Data with Varying Information Density](https://github.com/ECMWFCode4Earth/challenges_2023/issues/3)
 
 **Description**:
 
@@ -10,4 +10,4 @@ The challenge of this project is to improve `xbitinfo` to preserve the natural v
 
 Currently in the bitinformation framework, to preserve all real information, the maximum information content calculated by `xbitinfo` needs to be used for the entire dataset. However, bitinformation can also be calculated on subsets, such that the ‘boring’ parts can therefore be more efficiently compressed.
 
-![logo](assets/ecmwf-challenge.jpg)
+<img src="assets/ecmwf-challenge.jpg" width="450px">
